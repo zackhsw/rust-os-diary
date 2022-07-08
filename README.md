@@ -20,3 +20,28 @@
 
 rustlings 真是个不错的练习小工具，今天提交了varialbes的练习，白天工作太忙了，真的是只有在学校学生时期才有充足的时间来专注学习，诸君珍惜
 
+## 7/8
+
+---
+
+rustlings 安装是遇到的错误
+
+Q: `运行rustlings cargo install 时提示please ensure that VS 2013, VS 2015, VS 2017 or VS 2019 was installed with the Visual C++ option`
+
+A: ```c
+
+1. rustup uninstall toolchain stable-x86_64-pc-windows-msvc
+
+2. rustup toolchain install stable-x86_64-pc-windows-gnu
+
+3. rustup default stable-x86_64-pc-windows-gnu
+
+\```
+
+- 语句和表达式
+
+  表达式结尾没有分号，通常要返回结果；语句有分号结束。rust函数中居然不用return 使用表达式直接返回结果，==！神奇。
+
+- 函数
+
+  函数没啥好说的，rust函数无值返回时，隐式返回（），这玩意儿也是个表达式！？
