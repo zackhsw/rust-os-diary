@@ -336,4 +336,71 @@ A: ```c
   }
   ```
 
+
+
+
+## 7/10
+
+---
+
+继续rustlings...
+
+
+
+## 7/11
+
+---
+
+- 泛型
+
+  针对值的泛型（壕无人性...）
+
+  ```rust
+  // N 这个泛型参数，它是一个基于值的泛型参数！因为它用来替代的是数组的长度。N 就是 const 泛型，定义的语法是 const N: usize，表示 const 泛型 N ，它基于的值类型是 usize。
+  fn display_array<T: std::fmt::Debug, const N: usize>(arr: [T; N]) {
+      println!("{:?}", arr);
+  }
+  fn main() {
+      let arr: [i32; 3] = [1, 2, 3];
+      display_array(arr);
+      let arr: [i32; 2] = [1, 2];
+      display_array(arr);
+  }
+  ```
+
+- 特征
+
+  ```rust
+  //特征定义了**一个可以被共享的行为，只要实现了特征，你就能使用该行为**。
+  //如果不同的类型具有相同的行为，那么我们就可以定义一个特征，然后为这些类型实现该特征。定义特征是把一些方法组合在一起，目的是定义一个实现某些目标所必需的行为的集合。
+  // 真的是类似**接口**
+  pub trait Summary {
+      fn summarize(&self) -> String;
+  }
+  pub struct Post {
+      pub title: String, // 标题
+      pub author: String, // 作者
+      pub content: String, // 内容
+  }
+  
+  impl Summary for Post {
+      fn summarize(&self) -> String {
+          format!("文章{}, 作者是{}", self.title, self.author)
+      }
+  }
+  
+  pub struct Weibo {
+      pub username: String,
+      pub content: String
+  }
+  
+  impl Summary for Weibo {
+      fn summarize(&self) -> String {
+          format!("{}发表了微博{}", self.username, self.content)
+      }
+  }
+  ```
+
+  
+
   
