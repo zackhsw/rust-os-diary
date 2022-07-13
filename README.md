@@ -408,3 +408,53 @@ A: ```c
   休息中...
 
   
+  ## 7/13
+
+  ---
+
+  rust 不愧是拥有陡峭学习难度，直接干蒙了。为了作业任务，也只能有选择的查看学习了。
+  
+  - 集合类型
+    - Vector  
+    可理解动态数组
+    ```rust
+      let mut v = Vec::new();
+      v.push(1);
+    ```
+    - KV存储HashMap
+    ```rust
+      use std::collections::HashMap;
+
+      let mut scores = HashMap::new();
+
+      scores.insert(String::from("Blue"), 10);
+      scores.insert(String::from("Yellow"), 50);
+
+      let team_name = String::from("Blue");
+      let score: Option<&i32> = scores.get(&team_name);
+    ```
+
+  - 返回值和错误处理
+    - panic!("crash and burn");
+    - 错误处理
+    ```rust
+    use std::fs::File;
+
+    fn main() {
+        let f = File::open("hello.txt");
+
+        let f = match f {
+            Ok(file) => file,
+            Err(error) => {
+                panic!("Problem opening the file: {:?}", error)
+            },
+        };
+    }
+    ```
+  
+  - 包和模块
+    - 项目(Packages)：一个 Cargo 提供的 feature，可以用来构建、测试和分享包
+    - 包(Crate)：一个由多个模块组成的树形结构，可以作为三方库进行分发，也可以生成可执行文件进行运行
+    - 模块(Module)：可以一个文件多个模块，也可以一个文件一个模块，模块可以被认为是真实项目中的代码组织单元
+
+  
