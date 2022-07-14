@@ -420,6 +420,8 @@ A: ```c
     ```rust
       let mut v = Vec::new();
       v.push(1);
+      // 使用宏创建初始化
+      let v = vec![1, 2, 3];
     ```
     - KV存储HashMap
     ```rust
