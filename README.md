@@ -464,3 +464,43 @@ A: ```c
   ---
 
   今天周末终于有时间做这个rustlings小测验，不敢记录太多日记，怕太多都是关于rust变态感叹，:)  ,rust有很多需要学习的地方对于我来说，没怎么接触过这个语言，后面要是直接上手编程确实要费些功夫，rust很多特性给人带来很多新奇（虽然很多早就有了），值得学习。
+
+  ## 7/17
+
+  ---
+
+  ```
+  ?c
+  ★ All exercises completed! ★
+
+  +----------------------------------------------------+
+  |          You made it to the Fe-nish line!          |
+  +--------------------------  ------------------------+
+                            \\/
+      ▒▒          ▒▒▒▒▒▒▒▒      ▒▒▒▒▒▒▒▒          ▒▒
+    ▒▒▒▒  ▒▒    ▒▒        ▒▒  ▒▒        ▒▒    ▒▒  ▒▒▒▒
+    ▒▒▒▒  ▒▒  ▒▒            ▒▒            ▒▒  ▒▒  ▒▒▒▒
+  ░░▒▒▒▒░░▒▒  ▒▒            ▒▒            ▒▒  ▒▒░░▒▒▒▒
+    ▓▓▓▓▓▓▓▓  ▓▓      ▓▓██  ▓▓  ▓▓██      ▓▓  ▓▓▓▓▓▓▓▓
+      ▒▒▒▒    ▒▒      ████  ▒▒  ████      ▒▒░░  ▒▒▒▒
+        ▒▒  ▒▒▒▒▒▒        ▒▒▒▒▒▒        ▒▒▒▒▒▒  ▒▒
+          ▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▒▒▒▒▒▒▒▒▓▓▒▒▓▓▒▒▒▒▒▒▒▒
+            ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+              ▒▒▒▒▒▒▒▒▒▒██▒▒▒▒▒▒██▒▒▒▒▒▒▒▒▒▒
+            ▒▒  ▒▒▒▒▒▒▒▒▒▒██████▒▒▒▒▒▒▒▒▒▒  ▒▒
+          ▒▒    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒    ▒▒
+        ▒▒    ▒▒    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒    ▒▒    ▒▒
+        ▒▒  ▒▒    ▒▒                  ▒▒    ▒▒  ▒▒
+            ▒▒  ▒▒                      ▒▒  ▒▒
+
+  We hope you enjoyed learning about the various aspects of Rust!
+  If you noticed any issues, please don't hesitate to report them to our repo.
+  You can also contribute your own exercises to help the greater community!
+
+  Before reporting an issue or contributing, please read our guidelines:
+  https://github.com/rust-lang/rustlings/blob/main/CONTRIBUTING.md
+
+  ```
+
+
+
